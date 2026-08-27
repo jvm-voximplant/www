@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: #ffffff;
+    color: #111111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 24px 5%;
+    border-bottom: 1px solid #eaeaea;
+  }
+  header .logo {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 5%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    color: #555555;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  footer {
+    padding: 24px 5%;
+    text-align: center;
+    color: #999999;
+    font-size: 0.85rem;
+    border-top: 1px solid #eaeaea;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Chat to Call</div>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>Bienvenido</h1>
+    <p>Estamos aquí para ayudarte. Escríbenos usando el chat en la esquina de la pantalla.</p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Mi Empresa. Todos los derechos reservados.
+</footer>
+
+
+  <!-- insert_script -->
+  <script>window.VoxKitWidgetSettings = {
+    host: 'kit-im-us.voximplant.com',
+    channel_uuid: '8f98362e-c522-485f-8fc1-3228aac7a0c9',
+    token: '2091157549ed8c9522d2dc89adb98b6b',
+    client_data: {
+      client_id: '', // Customer ID
+      client_phone: '', // Customer phone number
+      client_avatar: ''  , // Customer avatar link
+      client_display_name: '',  // Customer name
+      client_email: '', // Customer email
+      client_language: 'en' // Interface language: 'en' or 'ru'
+  }
+  };
+  </script>
+
+  <script>var l=function(){var t=function(){"object"==typeof VoxKitWidget&&"object"==typeof VoxKitWidgetSettings&&VoxKitWidget.init(VoxKitWidgetSettings)},e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://kit.voximplant.com/static/widgets/web-chat.js?"+(new Date).valueOf(),e.readyState?e.onreadystatechange=function(){"loaded"!==e.readyState&&"complete"!==e.readyState||(e.onreadystatechange=null,t())}:e.onload=function(){t()};var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)};window.attachEvent?window.attachEvent("onload",l):window.addEventListener("load",l,!1);
+  </script>
+
+</body>
+</html>
